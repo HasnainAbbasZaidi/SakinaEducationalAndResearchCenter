@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAKINA EDUCATIONAL AND RESEARCH CENTER</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Welcome To Sakina Educational And Research Center</h1>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p id="about-text">
+                At Sakina Educational and Research Center, quality education meets affordability. With a fee of just
+                ₹100 per month, we are dedicated to empowering students by providing expert teachers who specialize in
+                clearing doubts across all subjects, especially Mathematics. Our unique approach ensures every student
+                grows from zero to hero, excelling in academics while also gaining valuable computer skills. We believe
+                in nurturing well-rounded individuals ready to conquer the challenges of the modern world.
+            </p>
+            <button onclick="toggleTranslation()">Translate to Hindi</button>
+            <ul id="highlights">
+                <li><i class="fas fa-rupee-sign"></i> Affordable fees: ₹100/month</li>
+                <li><i class="fas fa-chalkboard-teacher"></i> Expert teachers for doubt clearing</li>
+                <li><i class="fas fa-calculator"></i> Focus on Mathematics mastery</li>
+                <li><i class="fas fa-laptop-code"></i> Hands-on computer learning</li>
+            </ul>
+            <img src="istockphoto-1453883557-612x612.jpg" alt="Kids studying through laptop" id="about-image">
+            <br>
+            <a href="#contact" id="enroll-button" onclick="openModal()">Enroll Now</a>
+        </section>
+    </main>
+    <div id="enrollModal" class="modal">
+        <div class="modal-content">
+            <button class="close-button" onclick="closeModal()">&times;</button>
+            <h2>Enroll Now</h2>
+            <form action="https://formspree.io/f/mrbgneyl" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+h1 {
+    font-family: 'Poppins';
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+h2 {
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+body {
+    background-color: #f0f8ff;
+}
+
+header {
+    background-color: #F6DCAC;
+    color: white;
+    background: linear-gradient(to right, #F6DCAC, #01204E);
+}
+
+/* Styling the About Section */
+#about {
+    max-width: 800px;
+    margin: 20px auto;
+    /* Center the section */
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Light gray background */
+    border-radius: 10px;
+    /* Smooth corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    text-align: center;
+    /* Center text */
+}
+
+/* Styling the About Heading */
+#about h2 {
+    font-size: 2rem;
+    color: #333;
+    /* Darker text color */
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    /* Clean modern font */
+}
+
+/* Styling the Paragraph */
+#about p {
+    font-size: 1rem;
+    color: #555;
+    /* Medium gray for readability */
+    line-height: 1.6;
+    /* Better line spacing */
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    /* Simple and professional font */
+}
+
+/* Styling the Button */
+#about button {
+    background-color: #007bff;
+    /* Blue color */
+    color: white;
+    /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease;
+    /* Smooth hover transition */
+}
+
+/* Button Hover Effect */
+#about button:hover {
+    background-color: #0056b3;
+    /* Darker blue */
+}
+
+#enroll-button {
+    display: inline-block;
+    background-color: #007bff;
+    /* Primary blue color */
+    color: white;
+    /* White text */
+    padding: 12px 30px;
+    /* Adjust padding for a balanced look */
+    font-size: 1rem;
+    /* Standard font size */
+    font-weight: 600;
+    /* Slightly bold text */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 25px;
+    /* Fully rounded button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    transition: all 0.3s ease;
+    /* Smooth transition */
+    font-family: 'Roboto', sans-serif;
+    /* Clean font */
+    margin-top: 20px;
+}
+
+/* Hover Effects */
+#enroll-button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    /* Deeper shadow on hover */
+    transform: translateY(-2px);
+    /* Slight lift effect */
+}
+
+/* Active (Pressed) State */
+#enroll-button:active {
+    background-color: #004085;
+    /* Even darker blue */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Reduced shadow */
+    transform: translateY(2px);
+    /* Pressed-in effect */
+}
+
+@media (max-width: 768px) {
+    #about-content {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items horizontally */
+    }
+
+    #highlights,
+    #about-image {
+        flex: none;
+        /* Reset flex properties */
+        max-width: 100%;
+        /* Allow full width */
+    }
+}
+
+/* About Content Layout */
+#about-content {
+    display: flex;
+    /* Flexbox layout for side-by-side alignment */
+    align-items: center;
+    /* Vertically center items */
+    justify-content: space-between;
+    /* Space between list and image */
+    gap: 20px;
+    /* Add space between elements */
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+    margin-top: 20px;
+}
+
+/* Make the List and Image Share Space */
+#highlights {
+    flex: 1;
+    /* Take up available space */
+    list-style: none;
+    min-width: 250px;
+    /* Prevent shrinking too much */
+}
+
+#about-image {
+    flex: 1;
+    /* Take up available space */
+    max-width: 300px;
+    /* Limit the image width */
+    height: auto;
+    /* Maintain aspect ratio */
+    border: 5px solid #f9f9f9;
+    /* Frame effect */
+    border-radius: 10px;
+    /* Smooth corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover effects */
+}
+
+/* Hover Effect on Image */
+#about-image:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Deeper shadow */
+}
+/* Modal Container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Overlay */
+    z-index: 1000; /* Top of all elements */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full screen width */
+    height: 100%; /* Full screen height */
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+    justify-content: center;
+    align-items: center; /* Center the modal content */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px; /* Limit width */
+    text-align: left;
+    position: relative;
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Form Styling */
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between form elements */
+}
+
+.modal-content form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+}
